@@ -61,11 +61,11 @@ public class UserBrokenJobs {
 
     public static void sendMail (String subject, String msg) throws Exception{
 
-        Mail mail = new Mail(mailFrom, mailPass);//"jqthrnkqngfyfpyw"//"ily-e@yandex.ru"
+        Mail mail = new Mail(mailFrom, mailPass);
         mail.setHostPostSport("smtp.yandex.ru","465","465");
-        mail.setFrom(mailFrom);//"ily-e@yandex.ru"
+        mail.setFrom(mailFrom);
         String[] to  = new String[1];;
-        to = mailTo;//"ily-e@mail.ru";
+        to = mailTo;
         mail.setTo(to);
         mail.setSubject(subject);
         mail.setBody(msg);

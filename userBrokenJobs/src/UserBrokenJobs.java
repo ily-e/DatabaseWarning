@@ -26,7 +26,7 @@ public class UserBrokenJobs {
             }
         }
 
-        sendMail("Внимание! Обнаружены ошибка в базе "+ args[2]+"!","Не исправные Job!\n" + warningJobs);
+        sendMail("Внимание! Обнаружены ошибки в базе "+ args[2]+"!","\n" + warningJobs);
 
     }
 

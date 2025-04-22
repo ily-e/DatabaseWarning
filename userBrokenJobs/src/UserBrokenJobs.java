@@ -25,9 +25,11 @@ public class UserBrokenJobs {
                 mailTo[i] = args[i+7];
             }
         }
+        System.out.println(warningJobs);
+        System.out.println(mailFrom);
+        System.out.println(mailTo);
 
         sendMail("Внимание! Обнаружены ошибки в базе "+ args[2]+"!","\n" + warningJobs);
-
     }
 
     public static void searchFreeSpace(String BaseIp, String basePort, String baseName, String baseUser, String basePass) throws Exception {
@@ -72,8 +74,4 @@ public class UserBrokenJobs {
         mail.send();
 
     }
-
-
-
-
 }
